@@ -1,0 +1,19 @@
+{
+  "name": "udemy_sass_first_proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puritycg/udemy_sass_first_proj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puritycg/udemy_sass_first_proj/issues"
+  },
+  "homepage": "https://github.com/puritycg/udemy_sass_first_proj#readme"
+}
