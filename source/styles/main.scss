@@ -2,7 +2,8 @@
 $color-primary-light: rgba(2, 226, 230, 1);
 $color-primary: #02a5cc;
 $color-primary-dark: rgb(2, 102, 145);
-$text-color: #777;
+$color-gray-dark: #777;
+$color-white: #fcfcfc;
 
 //********** Default properties
 *,
@@ -22,7 +23,7 @@ body {
   font-weight: 400;
   //font-size: 16px;
   line-height: 1.7;
-  color: $text-color;
+  color: $color-gray-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -38,7 +39,7 @@ body {
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
-  animation: backGroundAnimation 1.5s ease 1s;
+  animation: backGroundAnimation 1.1s ease 1s;
   animation-fill-mode: backwards;
   backface-visibility: hidden;
 }
@@ -61,7 +62,7 @@ body {
 
 .header__logo {
   height: 10rem;
-  animation: logoAnimation 1s ease 1.7s;
+  animation: logoAnimation 1s ease 1.4s;
   animation-fill-mode: backwards;
   //backface-visibility: hidden; //removing shaking
 
@@ -86,7 +87,7 @@ body {
 }
 
 .heading-primary {
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden; //removing shaking
   margin-bottom: 6rem;
@@ -165,8 +166,8 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
-  color: $text-color;
+  background-color: $color-white;
+  color: $color-gray-dark;
 }
 
 .btn::after {
@@ -183,7 +184,7 @@ body {
 }
 
 .btn--white::after {
-  background: #ffffff;
+  background: $color-white;
 }
 
 .btn:hover::after {

@@ -1,22 +1,31 @@
 {
-  "name": "udemy_sass_first_proj",
+  "name": "landing-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Work on ITVDN Course",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/puritycg/udemy_sass_first_proj.git"
+    "url": "git+https://github.com/puritycg/landing-itvdn.git"
   },
-  "author": "",
+  "keywords": [
+    "landing"
+  ],
+  "author": "Anton Neverov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/puritycg/udemy_sass_first_proj/issues"
+    "url": "https://github.com/puritycg/landing-itvdn/issues"
   },
-  "homepage": "https://github.com/puritycg/udemy_sass_first_proj#readme",
+  "homepage": "https://github.com/puritycg/landing-itvdn#readme",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.5.1"
   }
 }
