@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/puritycg/udemy_sass_first_proj/issues"
   },
-  "homepage": "https://github.com/puritycg/udemy_sass_first_proj#readme"
+  "homepage": "https://github.com/puritycg/udemy_sass_first_proj#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
