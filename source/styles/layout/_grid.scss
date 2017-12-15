@@ -1,0 +1,42 @@
+.row{
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto;
+
+  &:not(:last-child){
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  [class^='col-']{
+    background-color: #ff7852;
+    float: left;
+    color: $color-white;
+    &:not(:last-child){
+      margin-right: $gutter-horizontal;
+    }
+  }
+  .col-1-of-1{
+    width: $grid-width;
+  }
+  .col-1-of-2{
+    width: ($grid-width - $gutter-horizontal)/2;
+  }
+  .col-1-of-3{
+    width: ($grid-width - ($gutter-horizontal*2))/3;
+  }
+  .col-2-of-3{
+    width: (2*($grid-width - ($gutter-horizontal*2))/3)+$gutter-horizontal;
+  }
+  .col-1-of-4{
+    width: ($grid-width - ($gutter-horizontal*3))/4;
+  }
+  .col-2-of-4{
+    width: (2*($grid-width - ($gutter-horizontal*3))/4)+$gutter-horizontal;
+  }
+  .col-3-of-4{
+    width: (3*($grid-width - ($gutter-horizontal*3))/4)+$gutter-horizontal*2;
+  }
+
+}
