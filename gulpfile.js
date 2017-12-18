@@ -84,8 +84,14 @@ gulp.task('copy:html', function () {
         .pipe(gulp.dest('build/'));
 });
 
+/*---------Copy Vendors CSS---------*/
+gulp.task('copy:vendorsCSS', function () {
+    return gulp.src('source/styles/css_dev_vendors/*.css')
+        .pipe(gulp.dest('build/css'));
+});
+
 /*---------Copy ALL---------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:vendorsCSS','copy:fonts', 'copy:images'));
 
 
 /*---------AutoPrefixer---------*/
