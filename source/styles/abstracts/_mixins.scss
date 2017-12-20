@@ -19,3 +19,8 @@
   //  transform: skewY(10deg);
   //}
 }
+
+@mixin buttonHideAfterFix{ //fix бага с проподанием афтер элемента главной кнопки при анимации при снятии ховера
+  position: relative;
+  z-index: 1;
+}

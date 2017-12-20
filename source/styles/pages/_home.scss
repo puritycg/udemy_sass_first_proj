@@ -15,11 +15,18 @@
   background-position: center;
   background-attachment: fixed;
   @include skewSection;
-
+  position: relative;//из за фикса на главную кнопку происходит наложение нижней секции
+  z-index: 2;
 }
 
 .section-tours{
+  @include buttonHideAfterFix;
   margin-top: -23rem;
   background-color: $color-gray-light-1;
-  padding: 35rem 0;
+  padding: 35rem 0 15rem;
+}
+
+.section-stories{
+  padding: 15rem 0;
+  background-color: $color-gray-light-1;
 }
