@@ -9,7 +9,7 @@
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
-    backface-visibility: hidden; //removing shaking
+    //backface-visibility: hidden; //removing shaking
     position: relative;
   }
   &--white {

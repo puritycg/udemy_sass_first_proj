@@ -7,11 +7,13 @@
                   rgba($color-primary-dark, .8)), url(../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   animation: backGroundAnimation 1.1s ease 1s;
   animation-fill-mode: backwards;
   backface-visibility: hidden;
+
 
   &__logo-box {
     position: absolute;

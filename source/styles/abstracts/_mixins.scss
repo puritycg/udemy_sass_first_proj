@@ -5,3 +5,17 @@
     clear: both;
   }
 }
+
+@mixin makeTextGradient{
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin skewSection{
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  //transform: skewY(-10deg);
+  //& > *{
+  //  transform: skewY(10deg);
+  //}
+}
