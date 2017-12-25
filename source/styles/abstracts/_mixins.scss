@@ -24,3 +24,10 @@
   position: relative;
   z-index: 1;
 }
+
+@mixin absoluteCenterTrans{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

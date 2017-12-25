@@ -10,6 +10,7 @@
   transform: skewX(-12deg);
 
 
+
   &__shape{
     width: 15rem;
     height: 15rem;
@@ -18,12 +19,42 @@
     shape-outside: circle(50% at 50% 50%);
     //border-radius: 100px;
     clip-path: circle(50% at 50% 50%);
+    position: relative;
+    //z-index: 99;
+    //backface-visibility: hidden;
+    overflow: hidden;
   }
   &__img{
+    transform: scale(1.2);
     height: 100%;
+    transition: all 1s;
+    //backface-visibility: hidden;
+    //filter: brightness(100%) blur(0.02px);
+
   }
 
   &__text{
     transform: skewX(12deg);
+  }
+
+  &__caption{
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: $color-white;
+    @include absoluteCenterTrans;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    transition: all .8s ease;
+    //backface-visibility: hidden;
+  }
+
+  &:hover &__caption{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  &:hover &__img{
+    transform: scale(1);
+    filter: brightness(70%) blur(6px);
   }
 }
