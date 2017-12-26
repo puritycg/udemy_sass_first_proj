@@ -40,9 +40,9 @@ body {
   transition: all 0.2s;
   backface-visibility: hidden; //removing shaking
   &:hover{
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
     text-shadow: 0.5rem  1rem  2rem rgba($color-primary-dark, .2);
-    letter-spacing: 0.5rem;
+    //letter-spacing: 0.2rem;
   }
 }
 

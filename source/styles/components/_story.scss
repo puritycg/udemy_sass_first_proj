@@ -8,7 +8,7 @@
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
-
+  //backface-visibility: hidden;
 
 
   &__shape{
@@ -23,6 +23,7 @@
     //z-index: 99;
     //backface-visibility: hidden;
     overflow: hidden;
+    @include clearfix;
   }
   &__img{
     transform: scale(1.2);
@@ -54,7 +55,7 @@
     transform: translate(-50%, -50%);
   }
   &:hover &__img{
-    transform: scale(1);
+    transform: scale(1.1);
     filter: brightness(70%) blur(6px);
   }
 }

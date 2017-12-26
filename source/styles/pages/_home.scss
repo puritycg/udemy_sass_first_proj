@@ -4,7 +4,7 @@
   margin-top: -20vh;
 }
 
-.section-feature{
+.section-feature {
   margin-top: -23rem;
   padding: 30rem 0;
   background-image: linear-gradient(
@@ -15,18 +15,43 @@
   background-position: center;
   background-attachment: fixed;
   @include skewSection;
-  position: relative;//из за фикса на главную кнопку происходит наложение нижней секции
+  position: relative; //из за фикса на главную кнопку происходит наложение нижней секции
   z-index: 2;
 }
 
-.section-tours{
+.section-tours {
   @include buttonHideAfterFix;
   margin-top: -23rem;
   background-color: $color-gray-light-1;
   padding: 35rem 0 15rem;
 }
 
-.section-stories{
+.section-stories {
   padding: 15rem 0;
   position: relative;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 1),
+                  rgba($color-primary-dark, 1));
+}
+
+.book {
+  background-image: linear-gradient(
+                  105deg,
+                  rgba($color-gray-light-1, .9) 50%,
+                  transparent 50%),
+  url(../images/booking.jpg);
+  background-size: cover;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+  &__form{
+    width: 50%;
+    padding: 6rem;
+  }
 }
