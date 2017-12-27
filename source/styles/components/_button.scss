@@ -1,5 +1,6 @@
 
 .btn {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;
@@ -11,6 +12,10 @@
     transition: all 0.2s;
    // backface-visibility: hidden; //removing shaking
     position: relative;
+    //change for the button element
+    border: none;
+    cursor: pointer;
+    outline: none;
   }
   &--white {
     background-color: $color-white;
@@ -46,7 +51,8 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active{
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
   }
