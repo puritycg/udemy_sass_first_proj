@@ -1,0 +1,64 @@
+.popup{
+
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba($color-black, .8);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  &:target{
+    opacity: 1;
+    visibility: visible;
+    & .popup__content{
+      opacity: 1;
+    }
+  }
+
+  &__content{
+    opacity: 0;
+    @include absoluteCenterTrans;
+    width: 75%;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    border-radius: 3px;
+    overflow: hidden;
+    display: table;
+    transition: all 5s ease;
+  }
+  &__left{
+    display: table-cell;
+    width: 33.33333%;
+    backface-visibility: hidden;
+
+
+  }
+  &__right{
+    @include clearfix;
+    display: table-cell;
+    width: 66.66667%;
+    padding: 3rem 5rem;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    & .btn{
+      float: right;
+    }
+  }
+  &__img{
+    display: block;
+    width: 100%;
+  }
+  &__text{
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    //backface-visibility: hidden;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-gray-light-2;
+
+    hyphens: auto;
+  }
+}
